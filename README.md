@@ -4,7 +4,7 @@
 ### Npm Install
 
 ```shell
-$ npm install --save git+ssh://@github.com:Riant/react-native-cq-share.git
+$ npm install --save git+ssh://git@github.com:Riant/react-native-cq-share.git
 ```
 
 ### Automatically Link
