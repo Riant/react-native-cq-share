@@ -78,10 +78,14 @@ public class CQShareManager extends ReactContextBaseJavaModule {
 
             if (localImages != null) {
                 // –暂时不做操作
+                // Riant: 还是要操作的，以下：
+                for (int i=0; i<localImages.size(); i++ ) {
+                    images.add(Uri.parse(localImages.getString(i)));
+                }
             }
 
             intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM,images);
-	    getCurrentActivity().startActivity(Intent.createChooser(intent, "图片分享"));
+	        getCurrentActivity().startActivity(Intent.createChooser(intent, "图片分享"));
         }
     }
 
